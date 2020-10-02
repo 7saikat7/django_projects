@@ -36,6 +36,7 @@ class Comment(models.Model):
 	created= models.DateTimeField(auto_now_add=True)
 	updated=models.DateTimeField(auto_now=True)
 	active=models.BooleanField(default=True)
+	image = models.FileField(null=True)
 
 	class Meta:
 		ordering=('created',)
